@@ -85,6 +85,7 @@ const CepValid = () => {
         </S.LabelRow>
         <S.InputRow>
           <S.Input
+          data-testid="testInputCep"
           type="number"
           name="CEP"
           placeholder="Digite seu CEP"
@@ -109,7 +110,7 @@ const CepValid = () => {
             </>
           )}
         <S.Row>
-          <S.Button type="submit" onClick={onSubmit} >Comprar</S.Button>
+          <S.Button type="submit" onClick={onSubmit}>Comprar</S.Button>
         </S.Row>
         {msgOk && (
           <p>Compra com o CPF:{cpf}, foi efetuada com sucesso!</p>
